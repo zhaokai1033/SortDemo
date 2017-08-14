@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         iSorts.clear();
         iSorts.put("冒泡排序", new BubbleSort());
         iSorts.put("鸡尾酒排序", new CocktailSort());
+        iSorts.put("选择排序", new SelectionSort());
+        iSorts.put("插入排序", new InsertionSort());
     }
 
     private TextView content;
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.bt_random).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                array.createSource(10);
+                array.createSource(15);
             }
         });
 

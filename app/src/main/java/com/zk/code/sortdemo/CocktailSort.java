@@ -22,16 +22,12 @@ public class CocktailSort extends ISort {
 
             for (int j = i; j < length - i - 1; j++) {
                 if (array[j] > array[j + 1]) {
-                    swap(array, j, j + 1);
-                    arrayModel.addSwapTime();
-                    arrayModel.onSortChange();
+                    swap(array, j, j + 1, arrayModel);
                 }
             }
             for (int j = length - i - 1; j > 0; j--) {
                 if (array[j] < array[j - 1]) {
-                    swap(array, j, j - 1);
-                    arrayModel.addSwapTime();
-                    arrayModel.onSortChange();
+                    swap(array, j, j - 1, arrayModel);
                 }
             }
         }

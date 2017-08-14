@@ -6,6 +6,7 @@ package com.zk.code.sortdemo;
  * Email zhaokai1033@126.com
  * des:
  * 冒泡排序
+ * 取最大值移到最后
  * ========================================
  */
 
@@ -19,9 +20,7 @@ public class BubbleSort extends ISort {
             int num = size - 1 - i;
             for (int j = 0; j < num; j++) {
                 if (array[j] > array[j + 1]) {
-                    swap(array, j, j + 1);
-                    arrayModel.addSwapTime();
-                    arrayModel.onSortChange();
+                    swap(array, j, j + 1, arrayModel);
                 }
             }
         }

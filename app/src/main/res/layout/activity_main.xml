@@ -11,17 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="原数据：" />
+        android:text=":" />
 
     <TextView
         android:id="@+id/content"
         style="@style/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/content_title"
         android:layout_toEndOf="@+id/content_title"
         android:layout_toRightOf="@+id/content_title"
         android:padding="10dp"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/result_title"
@@ -30,18 +32,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/content_title"
         android:padding="10dp"
-        android:text="排序后：" />
+        android:text=":" />
 
     <TextView
         android:id="@+id/result"
         style="@style/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/result_title"
         android:layout_below="@+id/content"
         android:layout_toEndOf="@+id/content_title"
         android:layout_toRightOf="@+id/content_title"
         android:padding="10dp"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/bt_random"

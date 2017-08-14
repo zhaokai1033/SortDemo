@@ -14,10 +14,12 @@ public abstract class ISort {
 
     abstract void startSort(ArrayModel arrayModel);
 
-    public void swap(int A[], int i, int j) {
+    public void swap(int A[], int i, int j, ArrayModel arrayModel) {
         int temp = A[i];
         A[i] = A[j];
         A[j] = temp;
         SystemClock.sleep(1000);
+        arrayModel.addSwapTime();
+        arrayModel.onSortChange();
     }
 }
