@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         iSorts.put("鸡尾酒排序", new CocktailSort());
         iSorts.put("选择排序", new SelectionSort());
         iSorts.put("插入排序", new InsertionSort());
+        iSorts.put("希尔排序", new ShellSort());
     }
 
     private TextView content;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         content = ((TextView) findViewById(R.id.content));
         result = ((TextView) findViewById(R.id.result));
         detail = ((TextView) findViewById(R.id.result_detail));
