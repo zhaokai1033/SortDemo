@@ -27,12 +27,12 @@ public class InsertionSort extends ISort {
                     //后移大于插入值的单位
                     for (int k = i; k > j; k--) {
                         //后一个等于前一个
-//                        array[k] = array[k - 1];
-                        //方便显示 调用统一的交换方法
-                        swap(array, k, k - 1, arrayModel);
+                        array[k] = array[k - 1];
+//                        //方便显示 调用统一的交换方法
+                        swap(array, k, k, arrayModel);
                     }
                     //插入当前值
-//                    array[j] = temp;
+                    array[j] = temp;
                     break;
                 }
             }

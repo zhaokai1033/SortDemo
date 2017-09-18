@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.bt_random).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                array.createSource(15);
+                array.createSource(10);
             }
         });
 
