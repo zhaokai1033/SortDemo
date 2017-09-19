@@ -14,6 +14,10 @@ public abstract class ISort {
 
     abstract void startSort(ArrayModel arrayModel);
 
+    public void swap(ArrayModel arrayModel) {
+        swap(null, 0, 0, arrayModel);
+    }
+
     public void swap(int A[], int i, int j, ArrayModel arrayModel) {
         if (i != j) {
             int temp = A[i];

@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         iSorts.put("鸡尾酒排序", new CocktailSort());
         iSorts.put("选择排序", new SelectionSort());
         iSorts.put("插入排序", new InsertionSort());
+        iSorts.put("二分法插入排序", new InsertionSortDichotomy());
         iSorts.put("希尔排序", new ShellSort());
     }
 

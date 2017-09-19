@@ -29,7 +29,8 @@ public class InsertionSort extends ISort {
                         //后一个等于前一个
                         array[k] = array[k - 1];
 //                        //方便显示 调用统一的交换方法
-                        swap(array, k, k, arrayModel);
+//                        swap(array, k, k, arrayModel);
+                        swap(arrayModel);
                     }
                     //插入当前值
                     array[j] = temp;
